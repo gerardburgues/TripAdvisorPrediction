@@ -7,11 +7,13 @@ To do that I'm gonna apply various NLP steps:
 
     1.1 Transform to lowercase
 
-    1.2 Remove stopwords
+    1.2 Tokenize
 
-    1.3 Lemmanization
+    1.3 Remove stopwords
 
-    1.4 Tokenize
+    1.4 Lemmanization
+
+   
    
 2. Use Sklearn to vectorize and apply TF-IDF to see the value of the words
 3. PCA to show graphically the scatter plot of most of the words values (Vectorization)
