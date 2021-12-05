@@ -4,7 +4,7 @@ With a given dataset with comments from users and the start rating, my goal will
 To do that I'm gonna apply various NLP steps:
 
 1. CREATE DICTIONARY WITH ALL THE WORDS
-#
+##
   1.1 Transform to lowercase
 #
   1.2 Remove stopwords
