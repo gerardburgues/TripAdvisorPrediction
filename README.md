@@ -22,5 +22,7 @@ To do that I'm gonna apply various NLP steps:
 6. Results and Conclusions. 
 
 
+CSV: https://www.kaggle.com/andrewmvd/trip-advisor-hotel-reviews
+
 
  
