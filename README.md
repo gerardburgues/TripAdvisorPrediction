@@ -20,7 +20,7 @@ To do that I'm gonna apply various NLP steps:
 4. PCA to show graphically the scatter plot of most of the words values (Vectorization - Feature Selection)
 5. Use Kmeans to show how many stars a Rating should actually be.
 6. Results and Conclusions. 
-7. 
+
 
 
  
