@@ -16,10 +16,10 @@ if __name__ == "__main__":
     else:
         var = input("Do you want RF or NV")
         if( var == 'RF'):
-            clf = load('../randomForest.joblib')
+            clf = load('randomForest.joblib')
         else:
 
-            clf  = load('../NaiveBayes.joblib')
+            clf  = load('NaiveBayes.joblib')
         #data = pd.read_csv('../Data/tripadvisor_hotel_reviews.csv')
         #AfterProcess = PreProcessing(data)
         #X ,y = trainModel(AfterProcess, data)
