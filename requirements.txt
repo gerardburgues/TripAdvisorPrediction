@@ -1,0 +1,6 @@
+pip install sklearn
+pip install wordcloud
+pip install matplotlib
+pip install pandas
+pip install gensim
+pip install nltk
