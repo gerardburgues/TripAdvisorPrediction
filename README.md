@@ -30,7 +30,7 @@ To do that I'm gonna apply various NLP steps:
 2. Use Sklearn to vectorize and apply TF-IDF to see the value of the words 
 3. Apply 
     3.1 Naive Bayes 
-    3.2 " -...---"  
+    3.2 Random Forest  
     to predict if comment would be 1-2-3-4-5 stars.
     
 5. PCA to show graphically the scatter plot of most of the words values (Vectorization - Feature Selection)
