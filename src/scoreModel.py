@@ -14,6 +14,7 @@ def scoreNaiveBayes(X_test,y_test,nb_model, nb2_model):
     print("Accuracy_NB2:", recall_score(y_test, y_pred2, average='micro'))
     print("Precision_NB2:", precision_score(y_test, y_pred2, average="micro"))
     print("ConfusionMatrix 2: \n ", confusion_matrix(y_test, y_pred2))
+
 def scoreRandomForest(X_test, y_test, y_predR ,clf):
     clf.score(X_test, y_test)
     print("Accuracy:", recall_score(y_test, y_predR, average='micro'))

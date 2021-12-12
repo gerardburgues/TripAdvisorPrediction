@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
-
+from joblib import dump, load
 from scoreModel import scoreNaiveBayes, scoreRandomForest
 
 
@@ -18,7 +18,7 @@ def trainModel(review_list, data):
 
     X = sparce_matrix
     splitText(X, y)
-    return X
+    return X,y
 
 def splitText(X, y):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -40,9 +40,16 @@ def NaiveBayesModel(X_train,X_test,y_train, y_test):
     nb2 = BernoulliNB()
     nb_model = nb.fit(X_train, y_train)
     nb2_model = nb2.fit(X_train, y_train)
+
+    dump(nb_model, 'NaiveBayes.joblib')
+
     return nb_model, nb2_model
 def RandomForestModel(X_train,X_test, y_train, y_test):
+    import pickle
+
     clf = RandomForestClassifier(max_depth=2, random_state=0)
     clf.fit(X_train, y_train)
+    dump(clf, 'randomForest.joblib')
     y_predR = clf.predict(X_test)
+
     return y_predR,clf
