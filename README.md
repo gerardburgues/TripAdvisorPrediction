@@ -1,3 +1,7 @@
+-- Be aware this was a university project and cleanliness wasn't my best friend
+
+
+
 # TripAdvisorPrediction 
 ### Gerard Burgués
 ### Tripadvisor DataSet
